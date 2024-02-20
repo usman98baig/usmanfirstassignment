@@ -1,0 +1,28 @@
+// Define the showMagicians function
+function showMagicians(magicians: string[]): void {
+    magicians.forEach((magician) => {
+        console.log(magician);
+    });
+}
+
+// Define the makeGreat function
+function makeGreat(magicians: string[]): string[] {
+    let modifiedMagicians: string[] = [];
+    for (let magician of magicians) {
+        modifiedMagicians.push(`the Great ${magician}`);
+    }
+    return modifiedMagicians;
+}
+
+// Array of magician's names
+let magicianNames: string[] = ["David Copperfield", "Harry Houdini", "Penn Jillette", "Teller"];
+
+// Call the makeGreat function with a copy of the magicianNames array
+let greatMagicians: string[] = makeGreat([...magicianNames]);
+
+// Call the showMagicians function to display the original and modified arrays
+console.log("Original Magicians:");
+showMagicians(magicianNames);
+
+console.log("\nModified Magicians:");
+showMagicians(greatMagicians);

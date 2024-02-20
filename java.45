@@ -1,0 +1,20 @@
+// Define the storeCarInfo function
+function storeCarInfo(manufacturer: string, model: string, ...extras: [string, any][]): Record<string, any> {
+    let carInfo: Record<string, any> = {
+        "manufacturer": manufacturer,
+        "model": model
+    };
+
+    // Add extra information to the carInfo object
+    extras.forEach(([key, value]) => {
+        carInfo[key] = value;
+    });
+
+    return carInfo;
+}
+
+// Call the storeCarInfo function with required and additional information
+let carInfo = storeCarInfo("Toyota", "Camry", "color", "blue", "year", 2022);
+
+// Print the returned object to ensure all information was stored correctly
+console.log(carInfo);

@@ -1,0 +1,12 @@
+// Define the showMagicians function
+function showMagicians(magicians: string[]): void {
+    magicians.forEach((magician) => {
+        console.log(magician);
+    });
+}
+
+// Array of magician's names
+let magicianNames: string[] = ["David Copperfield", "Harry Houdini", "Penn Jillette", "Teller"];
+
+// Call the showMagicians function with the array of magician's names
+showMagicians(magicianNames);

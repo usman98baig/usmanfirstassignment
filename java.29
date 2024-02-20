@@ -1,0 +1,27 @@
+// Make an array of favorite fruits
+let favoriteFruits: string[] = ["apple", "banana", "orange"];
+
+// Write if statements to check for certain fruits
+if (favoriteFruits.includes("apple")) {
+    console.log("You really like apples!");
+}
+
+if (favoriteFruits.includes("banana")) {
+    console.log("You really like bananas!");
+}
+
+if (favoriteFruits.includes("orange")) {
+    console.log("You really like oranges!");
+}
+
+if (favoriteFruits.includes("strawberry")) {
+    console.log("You really like strawberries!");
+} else {
+    console.log("You don't like strawberries.");
+}
+
+if (favoriteFruits.includes("grape")) {
+    console.log("You really like grapes!");
+} else {
+    console.log("You don't like grapes.");
+}

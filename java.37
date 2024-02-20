@@ -1,0 +1,11 @@
+// Define the makeShirt function with default parameters
+function makeShirt(size: string = "L", message: string = "I love TypeScript"): void {
+    console.log(`The shirt size is ${size} and the message printed on it is: ${message}`);
+}
+
+// Call the makeShirt function with default parameters
+makeShirt(); // Large shirt with default message
+makeShirt("M"); // Medium shirt with default message
+
+// Call the makeShirt function with custom parameters
+makeShirt("S", "Hello, world!"); // Small shirt with custom message

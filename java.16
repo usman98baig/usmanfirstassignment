@@ -1,0 +1,16 @@
+// Initial guest list
+let guestList: string[] = ["Albert Einstein", "Leonardo da Vinci", "Marie Curie", "Nikola Tesla"];
+
+// Print statement informing about the bigger dinner table
+console.log("Good news! We found a bigger dinner table.");
+
+// Add new guests
+const newGuests: string[] = ["Isaac Newton", "Galileo Galilei", "Ada Lovelace"];
+guestList.unshift(newGuests[0]); // Add to the beginning
+guestList.splice(Math.ceil(guestList.length / 2), 0, newGuests[1]); // Add to the middle
+guestList.push(newGuests[2]); // Add to the end
+
+// Print invitation messages for each person in the updated list
+guestList.forEach(person => {
+    console.log(`Dear ${person},\nYou are invited to dinner with me. Please join me for a delightful evening!\nSincerely, [Your Name]`);
+});

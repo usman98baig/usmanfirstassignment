@@ -1,0 +1,60 @@
+import { exec } from 'child_process';
+
+function installNode() {
+    return new Promise<void>((resolve, reject) => {
+        exec('npm install -g node', (error, stdout, stderr) => {
+            if (error) {
+                reject(error);
+                return;
+            }
+            console.log(stdout);
+            resolve();
+        });
+    });
+}
+
+function installTypeScript() {
+    return new Promise<void>((resolve, reject) => {
+        exec('npm install -g typescript', (error, stdout, stderr) => {
+            if (error) {
+                reject(error);
+                return;
+            }
+            console.log(stdout);
+            resolve();
+        });
+    });
+}
+
+function installVSCode() {
+    return new Promise<void>((resolve, reject) => {
+        exec('npm install -g vscode', (error, stdout, stderr) => {
+            if (error) {
+                reject(error);
+                return;
+            }
+            console.log(stdout);
+            resolve();
+        });
+    });
+}
+
+async function main() {
+    try {
+        console.log("Installing Node.js...");
+        await installNode();
+        console.log("Node.js installed successfully!");
+
+        console.log("Installing TypeScript...");
+        await installTypeScript();
+        console.log("TypeScript installed successfully!");
+
+        console.log("Installing VS Code...");
+        await installVSCode();
+        console.log("VS Code installed successfully!");
+    } catch (error) {
+        console.error("Error installing software:", error);
+    }
+}
+
+main();

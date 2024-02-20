@@ -1,0 +1,45 @@
+// Test 1: Equality check
+let car: string = 'subaru';
+console.log("Is car == 'subaru'? I predict True.");
+console.log(car == 'subaru'); // True
+
+// Test 2: Inequality check
+console.log("Is car != 'toyota'? I predict True.");
+console.log(car != 'toyota'); // True
+
+// Test 3: Greater than check
+let age: number = 25;
+console.log("Is age > 18? I predict True.");
+console.log(age > 18); // True
+
+// Test 4: Less than check
+console.log("Is age < 18? I predict False.");
+console.log(age < 18); // False
+
+// Test 5: Greater than or equal to check
+console.log("Is age >= 25? I predict True.");
+console.log(age >= 25); // True
+
+// Test 6: Less than or equal to check
+console.log("Is age <= 20? I predict False.");
+console.log(age <= 20); // False
+
+// Test 7: Logical AND check
+let isWeekend: boolean = true;
+let isSunny: boolean = true;
+console.log("Is it weekend and sunny? I predict True.");
+console.log(isWeekend && isSunny); // True
+
+// Test 8: Logical OR check
+console.log("Is it weekend or sunny? I predict True.");
+console.log(isWeekend || isSunny); // True
+
+// Test 9: Logical NOT check
+let isRaining: boolean = false;
+console.log("Is it not raining? I predict True.");
+console.log(!isRaining); // True
+
+// Test 10: String comparison check
+let city: string = 'New York';
+console.log("Is city != 'Paris'? I predict True.");
+console.log(city != 'Paris'); // True

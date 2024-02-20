@@ -1,0 +1,24 @@
+// Define the makeAlbum function
+function makeAlbum(artist: string, title: string, tracks?: number): Record<string, any> {
+    let album: Record<string, any> = {
+        "artist": artist,
+        "title": title
+    };
+
+    // Add tracks to the album object if provided
+    if (tracks !== undefined) {
+        album["tracks"] = tracks;
+    }
+
+    return album;
+}
+
+// Create album objects using the makeAlbum function
+let album1 = makeAlbum("Artist1", "Album1", 10);
+let album2 = makeAlbum("Artist2", "Album2");
+let album3 = makeAlbum("Artist3", "Album3", 15);
+
+// Print each album object to show the album information
+console.log(album1);
+console.log(album2);
+console.log(album3);

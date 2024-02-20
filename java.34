@@ -1,0 +1,19 @@
+// Array of favorite pizza names
+let pizzas: string[] = ["Pepperoni", "Margherita", "Supreme"];
+
+// Loop through the array and print the name of each pizza
+for (let pizza of pizzas) {
+    console.log(pizza);
+}
+
+console.log(""); // Empty line for separation
+
+// Loop through the array again and print a sentence using the name of each pizza
+for (let pizza of pizzas) {
+    console.log(`I like ${pizza} pizza.`);
+}
+
+console.log(""); // Empty line for separation
+
+// Additional sentence outside the loop
+console.log("I really love pizza!");

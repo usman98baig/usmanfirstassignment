@@ -1,0 +1,21 @@
+// Define an object for a car
+const car1: { make: string, model: string, year: number, color: string } = {
+    make: "Toyota",
+    model: "Camry",
+    year: 2022,
+    color: "Silver"
+};
+
+// Define another object for a car
+const car2: { make: string, model: string, year: number, color: string } = {
+    make: "Honda",
+    model: "Civic",
+    year: 2020,
+    color: "Red"
+};
+
+// Print information about the first car
+console.log("Car 1:", car1);
+
+// Print information about the second car
+console.log("Car 2:", car2);

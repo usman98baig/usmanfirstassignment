@@ -1,0 +1,23 @@
+// Initial guest list
+let guestList: string[] = ["Albert Einstein", "Leonardo da Vinci", "Marie Curie", "Nikola Tesla", "Isaac Newton", "Galileo Galilei", "Ada Lovelace"];
+
+// Print message informing that only two people can be invited
+console.log("Unfortunately, the new dinner table won't arrive in time, so I can only invite two people for dinner.");
+
+// Remove guests until only two names remain in the list
+while (guestList.length > 2) {
+    const removedGuest: string = guestList.pop()!;
+    console.log(`Sorry, ${removedGuest}, I can't invite you to dinner.`);
+}
+
+// Print invitation messages to the two remaining guests
+guestList.forEach(person => {
+    console.log(`Dear ${person},\nYou are still invited to dinner with me. Please join me for a delightful evening!\nSincerely, [Your Name]`);
+});
+
+// Remove the last two names from the list
+guestList.pop();
+guestList.pop();
+
+// Print the empty list to confirm
+console.log("Updated guest list:", guestList);

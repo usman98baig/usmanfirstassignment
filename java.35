@@ -1,0 +1,19 @@
+// Array of animals with a common characteristic
+let animals: string[] = ["Dog", "Cat", "Rabbit"];
+
+// Loop through the array and print the name of each animal
+for (let animal of animals) {
+    console.log(animal);
+}
+
+console.log(""); // Empty line for separation
+
+// Loop through the array again and print a statement about each animal
+for (let animal of animals) {
+    console.log(`A ${animal.toLowerCase()} would make a great pet.`);
+}
+
+console.log(""); // Empty line for separation
+
+// Additional sentence stating the common characteristic
+console.log("Any of these animals would make a great pet!");

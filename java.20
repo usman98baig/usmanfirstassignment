@@ -1,0 +1,5 @@
+// Store a list of countries in an array
+const countries: string[] = ["USA", "Canada", "France", "Japan", "Australia"];
+
+// Print the list of countries
+console.log("List of countries:", countries);

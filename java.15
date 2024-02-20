@@ -1,0 +1,15 @@
+// Initial guest list
+let guestList: string[] = ["Albert Einstein", "Leonardo da Vinci", "Marie Curie"];
+
+// Print statement for the guest who can't make it
+const cancelGuest: string = "Leonardo da Vinci";
+console.log(`${cancelGuest} can't make it to dinner.`);
+
+// Replace the canceling guest with a new person
+const newGuest: string = "Nikola Tesla";
+guestList = guestList.map(guest => guest === cancelGuest ? newGuest : guest);
+
+// Print invitation messages for each remaining person on the list
+guestList.forEach(person => {
+    console.log(`Dear ${person},\nYou are invited to dinner with me. Please join me for a delightful evening!\nSincerely, [Your Name]`);
+});

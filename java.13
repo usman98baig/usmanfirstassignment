@@ -1,0 +1,7 @@
+// Store favorite modes of transportation in an array
+const transportation: string[] = ["motorcycle", "car", "bicycle", "train"];
+
+// Print statements about each item in the list
+transportation.forEach(item => {
+    console.log(`I would like to own a ${item}.`);
+});

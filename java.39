@@ -1,0 +1,9 @@
+// Define the cityCountry function
+function cityCountry(city: string, country: string): string {
+    return `${city}, ${country}`;
+}
+
+// Call the cityCountry function with three city-country pairs and print the returned values
+console.log(cityCountry("Lahore", "Pakistan"));
+console.log(cityCountry("Tokyo", "Japan"));
+console.log(cityCountry("Paris", "France"));

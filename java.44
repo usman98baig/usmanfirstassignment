@@ -1,0 +1,18 @@
+// Define the makeSandwich function
+function makeSandwich(...items: string[]): void {
+    console.log("Sandwich Summary:");
+    if (items.length === 0) {
+        console.log("You ordered an empty sandwich!");
+    } else {
+        console.log("You ordered a sandwich with the following items:");
+        items.forEach((item, index) => {
+            console.log(`${index + 1}. ${item}`);
+        });
+    }
+    console.log("---------------------------------");
+}
+
+// Call the makeSandwich function with different numbers of arguments
+makeSandwich("Ham", "Cheese", "Lettuce", "Tomato");
+makeSandwich("Turkey", "Swiss cheese");
+makeSandwich();

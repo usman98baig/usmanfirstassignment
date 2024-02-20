@@ -1,0 +1,7 @@
+const personName: string = "John Doe";
+const lowercaseName: string = personName.toLowerCase();
+const uppercaseName: string = personName.toUpperCase();
+const titlecaseName: string = personName.split(' ').map(word => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase()).join(' ');
+console.log("Lowercase:", lowercaseName);
+console.log("Uppercase:", uppercaseName);
+console.log("Titlecase:", titlecaseName);

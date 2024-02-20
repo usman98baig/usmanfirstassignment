@@ -1,0 +1,18 @@
+// List of current users
+let currentUsers: string[] = ["john", "alice", "bob", "charlie", "david"];
+
+// List of new users
+let newUsers: string[] = ["John", "Alice", "mike", "sarah", "Bob"];
+
+// Loop through the new_users list to check for unique usernames
+for (let newUser of newUsers) {
+    // Convert both current and new usernames to lowercase for case-insensitive comparison
+    let lowercaseNewUser: string = newUser.toLowerCase();
+    
+    // Check if the lowercase new username is in the list of current users
+    if (currentUsers.includes(lowercaseNewUser)) {
+        console.log(`Sorry, the username '${newUser}' is already taken. Please enter a new username.`);
+    } else {
+        console.log(`Congratulations! The username '${newUser}' is available.`);
+    }
+}

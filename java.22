@@ -1,0 +1,8 @@
+// Define an array of numbers
+const numbers: number[] = [1, 2, 3, 4, 5];
+
+// Correct the index to a valid one
+const correctedIndex: number = numbers[3]; // Accessing index 3
+
+// Print the value at the corrected index
+console.log("Value at index 3:", correctedIndex);

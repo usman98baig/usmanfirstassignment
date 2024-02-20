@@ -1,0 +1,43 @@
+// Tests for equality and inequality with strings
+let fruit: string = 'apple';
+console.log("Is fruit == 'apple'? I predict True.");
+console.log(fruit == 'apple'); // True
+
+console.log("Is fruit != 'banana'? I predict True.");
+console.log(fruit != 'banana'); // True
+
+// Tests using the lower case function
+let city: string = 'New York';
+let lowercaseCity: string = city.toLowerCase();
+console.log("Is lowercaseCity == 'new york'? I predict True.");
+console.log(lowercaseCity == 'new york'); // True
+
+// Numerical tests
+let number1: number = 10;
+let number2: number = 20;
+console.log("Is number1 < number2? I predict True.");
+console.log(number1 < number2); // True
+
+console.log("Is number1 >= number2? I predict False.");
+console.log(number1 >= number2); // False
+
+// Tests using "and" and "or" operators
+let isWeekend: boolean = true;
+let isSunny: boolean = false;
+console.log("Is it weekend and sunny? I predict False.");
+console.log(isWeekend && isSunny); // False
+
+console.log("Is it weekend or sunny? I predict True.");
+console.log(isWeekend || isSunny); // True
+
+// Test whether an item is in an array
+let fruits: string[] = ['apple', 'banana', 'orange'];
+let item: string = 'banana';
+console.log(`Is ${item} in the array? I predict True.`);
+console.log(fruits.includes(item)); // True
+
+// Test whether an item is not in an array
+let vegetables: string[] = ['carrot', 'broccoli', 'spinach'];
+let newItem: string = 'cabbage';
+console.log(`Is ${newItem} not in the array? I predict True.`);
+console.log(!vegetables.includes(newItem)); // True
